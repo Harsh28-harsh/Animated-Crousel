@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Crousel</title>
+    <link rel="stylesheet" href="style.css">
+    <link 
+    href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+    rel="stylesheet"
+    >
+</head>
+<body>
+    <!-- HEADER SECTION START -->
+    <header>
+        <div class="nav container"> <!-- Navbar ka main container -->
+
+            <a href="#" class="logo">
+                <img src="images/background-text.png" alt="" />
+                <!-- Website ka logo -->
+            </a>
+
+            <div class="nav-links"> <!-- Navigation links -->
+                <a href="#" class="nav-link" id="active">Products</a>
+                <!-- Active page (highlighted link) -->
+
+                <a href="#" class="nav-link">Contact</a>
+                <!-- Normal navigation link -->
+            </div>
+
+            <div class="nav-icons"> <!-- Right side icons -->
+                <i class="bx bx-user"></i> <!-- User/profile icon -->
+                <i class="bx bx-basket" id="active"></i> <!-- Cart icon -->
+            </div>
+
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+
+    <!-- MAIN CAROUSEL SECTION START -->
+    <div class="main-container container">
+
+        <div class="overlay"></div>
+        <!-- Overlay layer (design effect ke liye, jaise blur/dark/light layer) -->
+
+        <img src="images/carousel-1.png" alt="" class="carousel-img">
+        <!-- Main product image (jo carousel me change hoti rahegi) -->
+
+        <img src="images/background-text.png" alt="" class="background-text">
+        <!-- Background me text/logo image (UI decoration ke liye) -->
+
+        <div class="data-container">
+            <!-- Yeh section text + controls ko hold karta hai -->
+
+            <div class="text">
+                <!-- Product information -->
+                <h1>Sublime <br />Lime</h1>
+                <!-- Product name (line break ke saath) -->
+
+                <span>₹99.99</span>
+                <!-- Product price -->
+
+                <p>
+                    Experience the perfect blend of fresh , juicy juices in every sip!
+                </p>
+                <!-- Product description -->
+
+                <a href="" class="add-cart-btn">Add to cart</a>
+                <!-- Add to cart button -->
+            </div>
+
+            <a href="#" class="price">$59.23</a>
+            <!-- Side me floating price (design ke liye alag se show ho raha hai) -->
+
+            <div class="controls">
+                <!-- Carousel controls (navigation buttons) -->
+
+                <div class="arrows">
+                    <i class="bx bx-arrow-left-stroke"></i>
+                    <!-- Left arrow (previous item ke liye) -->
+
+                    <i class="bx bx-arrow-right-stroke"></i>
+                    <!-- Right arrow (next item ke liye) -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- MAIN CAROUSEL SECTION END -->
+
+
+    <script src="script.js"></script>
+    <!-- JavaScript file (carousel functionality handle karega) -->
+
+    
+    
+</body>
+</html>
